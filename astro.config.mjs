@@ -7,7 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Flutter/Android Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/fengjutian/flutter-android-doc' }],
 			sidebar: [
 				{
 					label: 'Guides',
@@ -19,6 +19,10 @@ export default defineConfig({
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+			    {
+					label: 'Questions',
+					autogenerate: { directory: 'questions' },
 				},
 			],
 		}),
