@@ -1,5 +1,5 @@
 ---
-title: Flutter 网站资源
+title: Flutter 资源
 description: Flutter 官方网站资源
 ---
 
