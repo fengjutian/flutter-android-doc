@@ -6,26 +6,27 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Flutter/Android Docs',
+			title: 'fengjutian Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/fengjutian/flutter-android-doc' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: '文章',
+					// items: [
+					// 	// Each item here is one entry in the navigation menu.
+					// 	{ label: 'Example Guide', slug: 'guides/example' },
+					// ],
+					autogenerate: { directory: 'guides' },
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
 				{
-					label: 'Resource',
+					label: '资源',
 					autogenerate: { directory: 'resource' },
 				},
 			    {
-					label: 'Questions',
+					label: '问题',
 					autogenerate: { directory: 'questions' },
 				},
 			],
